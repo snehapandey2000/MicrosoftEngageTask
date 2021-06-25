@@ -1,0 +1,17 @@
+html, body {
+  	height: 100%;
+}
+body {
+	margin: 0;
+	text-align: center;
+	background-color: #4b53bc;
+	color:#f7f8fc;
+}
+
+.mainContainer {
+	padding-top: 30px;
+	margin: auto;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}

@@ -41,7 +41,8 @@ class Home extends Component {
 				</div>
 				<div style={{ fontSize: "14px", fontWeight: "500", background: "#4b53bc", textAlign: "center", margin: "auto", marginBottom: "10px", marginTop: "100px" }}>
 					Source code:
-					<IconButton style={{ color: "black" }} onClick={() => window.location.href = ""}>
+					<IconButton style={{ color: "black" }} onClick={() => window.open(
+						"https://github.com/snehapandey2000/MicrosoftEngageTask", "_blank")}>
 						<GitHubIcon />
 					</IconButton>
 				</div>

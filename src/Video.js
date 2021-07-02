@@ -20,7 +20,7 @@ import Modal from 'react-bootstrap/Modal'
 import 'bootstrap/dist/css/bootstrap.css'
 import "./Video.css"
 
-const server_url = process.env.NODE_ENV === 'production' ? 'https://angry-dijkstra-f7abc1.netlify.app/' : "http://localhost:4001"
+const server_url = process.env.NODE_ENV === 'production' ? 'https://microsoft-clone-sneha.netlify.app/' : "http://localhost:4001"
 
 var connections = {}
 const peerConnectionConfig = {

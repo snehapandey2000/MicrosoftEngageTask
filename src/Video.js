@@ -470,7 +470,7 @@ class Video extends Component {
 
 						<div style={{ justifyContent: "center", textAlign: "center", paddingTop: "40px", paddingBottom: "70px" }}>
 							<video id="my-video" ref={this.localVideoref} autoPlay muted style={{
-								borderStyle: "solid", borderColor: "#bdbdbd", objectFit: "fill", width: "60%", height: "30%"
+								transform: "scaleX(-1)", borderStyle: "solid", borderColor: "#bdbdbd", objectFit: "fill", width: "60%", height: "30%"
 							}}></video>
 						</div>
 					</div>

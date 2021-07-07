@@ -11,6 +11,7 @@ import ScreenShareIcon from '@material-ui/icons/ScreenShare'
 import StopScreenShareIcon from '@material-ui/icons/StopScreenShare'
 import CallEndIcon from '@material-ui/icons/CallEnd'
 import ChatIcon from '@material-ui/icons/Chat'
+import { InlineShareButtons } from 'sharethis-reactjs';
 
 import { message } from 'antd'
 import 'antd/dist/antd.css'
@@ -455,6 +456,9 @@ class Video extends Component {
 				</div>
 			)
 		}
+		var emailSubject = "Invitation to join meet";
+
+		var emailContent = "Link to join: " + window.location.href;
 		return (
 			<div>
 				{this.state.askForUsername === true ?
@@ -523,6 +527,33 @@ class Video extends Component {
 									backgroundColor: "white", color: "#4b53bc", fontWeight: "600", marginLeft: "20px",
 									width: "120px", fontSize: "10px"
 								}} onClick={this.copyUrl}>Copy invite link</Button>
+
+								<div style={{ height: "10px" }}></div>
+								<InlineShareButtons
+									config={{
+										alignment: 'center',  // alignment of buttons (left, center, right)
+										color: 'white',      // set the color of buttons (social, white)
+										enabled: true,        // show/hide buttons (true, false)
+										font_size: 13,        // font size for the buttons
+										labels: 'cta',        // button labels (cta, counts, null)
+										language: 'en',       // which language to use (see LANGUAGES)
+										networks: [           // which networks to include (see SHARING NETWORKS)
+											'email'
+										],
+										padding: 2,          // padding within buttons (INTEGER)
+										radius: 4,            // the corner radius on each button (INTEGER)
+										// show_total: true,
+										size: 30,             // the size of each button (INTEGER)
+										// OPTIONAL PARAMETERS
+										url: 'https://www.sharethis.com', // (defaults to current url)
+										image: 'https://bit.ly/2CMhCMC',  // (defaults to og:image or twitter:image)
+										description: 'custom text',       // (defaults to og:description or twitter:description)
+										title: 'custom title',            // (defaults to og:title or twitter:title)
+										message: emailContent,     // (only for email sharing)
+										subject: emailSubject,  // (only for email sharing)
+									}}
+								/>
+
 							</div>
 
 							<Row id="main" className="flex-container" style={{ margin: 0, padding: 0 }}>

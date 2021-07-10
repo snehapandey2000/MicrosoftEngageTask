@@ -22,8 +22,8 @@ It is a video calling web app to connect with each other seamlessly. :movie_came
 ## Tech Stack :computer:
 
 - [Html5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5)
-- [JavaScipt](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [JavaScipt](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [Reactjs](https://reactjs.org/)
 - [WebRTC](https://webrtc.org/)
 - [Socket.io](https://socket.io/)

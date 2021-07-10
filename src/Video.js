@@ -1,3 +1,4 @@
+//sets the main communication window
 import React, { Component } from 'react'
 import io from 'socket.io-client'
 import faker from "faker"
@@ -98,6 +99,7 @@ class Video extends Component {
 		})
 	}
 
+	//stream audio and video
 	getUserMedia = () => {
 		if ((this.state.video && this.videoAvailable) || (this.state.audio && this.audioAvailable)) {
 			navigator.mediaDevices.getUserMedia({ video: this.state.video, audio: this.state.audio })
@@ -163,6 +165,7 @@ class Video extends Component {
 		})
 	}
 
+	// screen sharing
 	getDislayMedia = () => {
 		if (this.state.screen) {
 			if (navigator.mediaDevices.getDisplayMedia) {
@@ -214,6 +217,7 @@ class Video extends Component {
 		})
 	}
 
+	//chat feature
 	gotMessageFromServer = (fromId, message) => {
 		var signal = JSON.parse(message)
 
@@ -236,6 +240,7 @@ class Video extends Component {
 		}
 	}
 
+	//the layout of participants
 	changeCssVideos = (main) => {
 		let widthMain = main.offsetWidth
 		let minWidth = "30%"
@@ -410,6 +415,7 @@ class Video extends Component {
 		this.setState({ message: "", sender: this.state.username })
 	}
 
+	//copy meeting url
 	copyUrl = () => {
 		let text = window.location.href
 		if (!navigator.clipboard) {

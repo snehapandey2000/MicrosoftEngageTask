@@ -23,7 +23,7 @@ It is a video calling web app to connect with each other seamlessly. :movie_came
 
 - [Html5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5)
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
-- [JavaScipt](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [Reactjs](https://reactjs.org/)
 - [WebRTC](https://webrtc.org/)
 - [Socket.io](https://socket.io/)
